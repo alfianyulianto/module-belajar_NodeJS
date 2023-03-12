@@ -1,0 +1,44 @@
+- Kita harus melakukan inisialisasi project kita supaya dapat dikenali oleh 'npm' dengan keyword 'npm init'
+- Ketika kita melakukan inisialisasi 'npm' nanti kita akan diminta untuk mengisikan beberapa data mulai dari:
+  1. package name: (name_folder sebagai default) -> berisi nama package
+  2. version: (1.0.0) -> terdapat 3 yang berarti simantik version, digit ke 3(perubahan patch) artinya perbaikan pada bugfixs, digit ke 2(perubahan minor) artinya kemungkinan bisa dipake, digit ke 1(mager) artinya jika kita menggunakan versi yang berbeda didepannya tidak akan sama.
+  3. description: -> berisi deskripsi dari package yang ingin kita buat
+  4. entry point: (index.js sebagai default) -> file pertama kali yang diakses oleh aplikasi
+  5. test command: 
+  6. git repository: -> alamat tempat penyimpanan package di github
+  7. keyword: (berisi tentang package atau aplikasi kita)
+  8. author: -> bisa diisi nama kita
+  9. license: (ISC sebagai default)
+- Ketika kita sudah mengisi semua pertanyaan yang ada di terminal maka secara otomatis akan di buatkan file 'package.json'
+
+- Di dalam file 'package.json' terdapat key 'scripts'
+"scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
+- Kita bisa menjalankan key 'test' di dalam scripts dengan perintah 'npm name_key'
+- Ketika di key 'script' kita tulis bukan perintah standar misal
+"scripts": {
+  "jalan": "node app.js"
+},
+- Kita harus menjalankannya dengan perintah 'npm run jalan'
+
+- Perintah untuk melakukan install terhadap package 'npm i <package_name>' atau 'npm install <package_name>' atau dengan versi package 'npm i <package_name>@versi_package'
+- Ketika kita melakukan install terhadap package yang ada di npm akan membuat folder bernama node_modules
+- node_modules akan menyimpan pakcage baru kita install
+- Lalu pada file 'package.json' terdapat key 'dependency' artinya package apa aja yang kita gunakan
+"dependencies": {
+  "validator": "^13.7.0"
+}
+- Kemudian juga terdapat file 'package-lock.json' untuk mengelola secara lebih detail dari 'dependency' kita
+
+
+- Perintah untuk melakukan unsintall terhadap package kita yang sudah terinstall, keywordnya 'npm unsintall <package_name>'
+- Ketika kita melakukan unsintall terhadap package maka nama package  key 'dependency' yang ada file 'package.json' akan terhapus
+- Lalu detail dari package yang ada di file package-lock.json akan terhapus juga
+
+- Package nodemon
+- Install
+  * global : npm install -g nodemon 
+  -> kita bisa mengetikan perintah 'nodemone <file_name>'
+  * locak : npm install --save-dev nodemon
+  ->configurasi di file 'package.json' dengan menuliskan '"start": "nodemon app.js"' pada bagian 'script'

@@ -1,0 +1,55 @@
+NodeJS
+- NodeJS is a JavaScript 'runtime' built in Chrome V8 JavaScript Engine
+- An asynchronouse event-driven JavaScript 'runtime' designed to built network application (sebuah runtime untuk membuat aplikasi yang asynchronouse)
+- NodeJS bukan bahasa pemograman, padahal NodeJS itu sebuh 'runtime' yang dapat menjalankan scrit JavaScript
+
+- Runtime? adalah dimana kita menjalankan / mengeksekusi code kita
+- Kita tahu bahwa JavaScript menjalankan program di dalam browser(seperti menjalankan website) dengan menggunakan 'V8 Engine'(chrome). Dengan menggunakan NodeJS memungkinkan 'V8 Engine' untuk di jalankan di dalam sistem operasi, sehingga kita bisa mengakses memori, mengakses i/o, mengakses file system, dst.
+- Engine JavaScript di setiap web browser:
+    * V8 -> Chrome
+    * Chakra -> Microssof Exproler
+    * SpiderMonkey -> Mozilla
+
+
+
+
+Karakterstik NodeJS
+1. Asynchronouse & Event driven
+2. Non-Blocking
+3. Single Threaded but Higly Scalable
+4. Cross Platform
+5. Open Source dengan license (MIT License)
+6. NPM
+
+
+Fitur Utama NodeJS
+1. File system
+2. Buffer (mengelola binary dari file)
+3. Http & Https
+4. REPL (Read Evaluate Print Loop, membuat kita bisa mengeksekusi program lewat terminal)
+5. Console
+6. Crypto (bisa melakukan cryptografi)
+7. Zlib
+
+
+NodeJS vs PHP
+-------------------------------------------------------------------------
+                  |           PHP          |           NodeJS           |
+-------------------------------------------------------------------------         
+Tahun Dibauat     |           1994         |            2009            |
+Engine            |       Zend Engine      |      Googe V8 Engine       |
+Eksekusi Code     |   Multi-thread, Sync   | Singe-thread Asyc          |
+Web Server        |        Apache/IIS      |Berjalan di runtime sendiri |
+Package Meneger   |         Composer       |              NPM           |
+-------------------------------------------------------------------------
+
+
+NodeJS Cocok Untuk...
+- Dynamic Single Page Application (SPA) -> aplikasi yang hanya satu halaman tapi isinya dinamis bisa berubah-ubah 
+- Realtime App (chat, game->multiplayer)
+- API
+- Streaming App
+- Microservice
+- Command Line Tool
+- Applikasi dengan Stack (MERN, MEan, MEVN, dst)
+

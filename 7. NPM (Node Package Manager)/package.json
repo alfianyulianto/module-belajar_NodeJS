@@ -1,0 +1,21 @@
+{
+  "name": "coba-npm",
+  "version": "1.0.0",
+  "description": "Belajar NodeJs",
+  "main": "app.js",
+  "scripts": {
+    "jalan": "node app",
+    "start": "nodemon app.js",
+    "dev": "ls",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alfian",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "validator": "^13.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

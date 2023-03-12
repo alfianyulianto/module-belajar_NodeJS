@@ -1,0 +1,2 @@
+Aplikasi CLI (Command Line Interface)
+- Aplikasi ini berjalan di command line tool / terminal

@@ -1,0 +1,11 @@
+Arsitektur NodeJS
+- Karena NodeJS konteksnya berjalan di sistem operasi maka kita bisa mengakses apa saja yang ada di sistem operasi dengan berbagai perintah
+  * fs.writeFile() -> mengakses file system
+  * os.platform() -> mengetahui operating system yang digunakan
+  * http.createServer() -> membuat web server
+  * path.dirname() -> mengetahui alamat untuk menyimpan file
+
+
+Cara Kerja NodeJS
+- Asynchronouse, Non-Blocking, Single Thread
+- Pada sebuah restoran pasti terdapat 2 meja, ada 1 pelayan (thread) dan dapur. Dengan Asynchronouse maka memungkinkan seorang pelayan melayani 2 meja sekaligus, semisal ada 2 pembeli datang bersamaan dan duduk di meja 1 dan meja 2. Pertama pelayan(thread) datang ke meja 1 menanyakan pesanan tapi pembeli meja satu masih menunggu maka bisa saja pelayan berpindah ke meja 2 untuk menanyakan pesanan. Setelah mendapatkan pesanan dari meja 2 maka pesanan akan menyampaikan pesanan tersebut ke dapur. Setelah dari dapur pelayan(thread) kembali ke meja 1 untuk menayakan pesanan sembari menunggu makanan yang di pesan dari meja 2 selesai. Kemudian pesanan dari meja 1 disampaikan ke pelayan(thread) ke dapur, sampainya di dapur pelayan ternyata makanan meja 2 selesai itu artinya pelayan akan mengantarkan makanan ke meja 2 sembari menunggu makanan dari meja 1 seesai dibuat di dapur. Kemudian begitu seterusnya sampai semua pembeli dapat dilayani tanpa harus menggu lama.

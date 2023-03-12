@@ -1,0 +1,16 @@
+REPL (Read - Eval - Print - Loop)
+- diguanakan untuk melakukan 'debuging script' dan untuk mengeksekusi kode lewat terminal.
+
+- Untuk membuka REPL NodeJS ketika perintah 'node'
+
+- perintah 'global' digunakan untuk memberitahu perintah apa yang bisa kita gunakan secara global
+- perintah 'global. 2 kali' akan memapilkan semua module global yang bisa digunakan di dalam NodeJS
+- perintah '.help' menampilkan semua perintah sepesial yang ada antar lain:
+    * .break  >  untuk keluar ditengah-tengah multiline koding yang kita tulis, ketika kita sedang menulis kode tapi dirasa kode tersebut tidak jadi kita tulis maka bisa gunakan perintha 'break'
+    * .clear  >  merupakan alias dari '.break'
+    * .editor >  untuk mode editor, memungkinkan kita untuk menulis banyak baris sekaligus (seperti vim tapi di dalam REPL)
+    * .exit  >   Exit the REPL
+    * .help  >   Print this help message
+    * .load  >   untuk mengambil isi dari sebuah file JavaScript
+    * .save  >   untuk menyimpan isi dari satu sesi node REPL ke dalam sebuah file
+

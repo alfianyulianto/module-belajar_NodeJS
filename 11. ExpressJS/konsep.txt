@@ -1,0 +1,59 @@
+ExpressJS (expressjs.com)
+- Fast, unopinionated, minimalist, web Framework for nodeJS (cepat, tidak beropini, minimalist)
+
+- Web App Framework yang dibuat di atas nodeJS
+- Menyediakan antarmuka yang minimal untuk kakas yang diperlukan dalam membuat sebuah aplikasi web (maksudnya dengan menunilskan beberapa baris kode saja kita sudah bisa membuat aplikasi yang sederhana)
+- Membantuk pengelolaan data dari server ke aplikasi
+- Mendukung Techstack (MERN, MEAN, MEVN)
+- Diciptaan oleh TJ Holowaychuuck, ppada tanggal 22 Mei 2010
+
+Fitur ExpressJS
+- Menangani request dengan berbagai method HTTP dengan mudah (membuat Routes dengan methode get, post, put/patch, delete)
+- Membuat aplikasi dengan konsep MVC (Model-View-Controller)
+- Terintegrasi dengan "view" rendering engine, untuk mengelola tamplate
+- Middleware
+
+Pengertian Unopinionated : 
+- tidak ada aturan yang bakuuntuk membuat sesuatu
+- flexible
+- menentukan sendiri struktur aplikasi
+- bongkar pasang middleware
+
+Pengertian Opinionated : aturan-aturan sesuatu dalam sembuat sesuatu dengan Framework tersebut sudah dikasih tau
+
+Tamplating Engine
+- Pug
+- Haml.js
+- hbs (handle bar)
+- EJs
+- React
+- dst
+
+Database
+- Level DB
+- MongoDB
+- Elasticsearch
+- MySQL
+- PostgreSQL
+- Redis
+- SQL server
+- SQLite
+
+routing : mendeskripsikan bagaimana aplikasi melakukan response dari request client lewat endpoin
+-structur routing pada Express.Js
+app.METHOD(path, handler)
+
+
+Menggunakan ExpressJS
+const express = require("express);
+const app = express();
+const port = 3000
+
+app.get('/', (req, res)=> {
+  res.send('Hello World!');
+})
+
+app.listen(port, ()=> {
+  console.log(`Example app listeningat http://localhost:${port}`);
+})
+

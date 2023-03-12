@@ -1,0 +1,4 @@
+- Nama file 'index.js' menjadi nama file root, sehingga ketika kita menjalankan sebuah node tidak perlu menulisnya dengan 'node index' tapi kita bisa menulisnya dengan cara 'node .'
+
+- Dengan NodeJS kita bisa memanggil sebuah file lain dengan menggunakan keyword 'require'. 
+- NodeJS mengandung sistem module, artinya NodeJS menganggap satu file itu sebagai satu module sehingga kita tidak bisa mengakses isi dari file(module) untuk file(module) yang lain. Dengan emnggunakan keyword 'export' maka kita bisa mengakses variable, function, class, object, dst untuk digunakan diluar file(module) ini.

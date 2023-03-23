@@ -1,0 +1,26 @@
+View / Template Engine
+- Menungkinkan kita membuat file tamplate statis untuk mengelola aplikasi kita
+- Engine tersebut dapat mengganti 'variable' pada tamplate kita dengan nilai sebenarnya, lalu menampilkannya dalam bentuk HTML
+- Mempermudah dalam pembuatan halaman HTML
+
+EJS (Embedded JavaScript Tamplate)
+Link : https://ejs.co
+- Simple syntax (pengunaannya hampir sama dengan tamplating engie php / laravel)
+- Simple setup
+- Speed Execution'
+- Easy Debugging
+- Ective Development
+- Awalnya dibuat oleh pembuat Express
+
+Fitur EJS
+- Membuat controll flow dengan  <% %>
+- Escape otuput dengan <%= %>
+- Unescaped output dengan <%- %>
+- Include file
+- Clien-side support
+- dsb
+
+
+Package express-ejs-layouts : digunakan untuk membuat satu halaman layouts utama, yang isi-isinya mengambil dari partials yang berbeda untuk tiap halaman
+layouts : digunakan untuk menyimpan tamplilan utama
+partials : untuk menyimpan bagian-bagian dari layouts utama (sidebar, navbar, dst)

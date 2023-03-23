@@ -3,7 +3,6 @@ const express = require("express");
 const app = express();
 const port = process.env.ENV_PORT;
 const hostname = process.env.ENV_HOSTNAME;
-const qs = require("qs");
 
 // app.get('/', (req, res)=> {}) : artinya ketika kita menjalankan aplikasinya dan kita mengarah ke 'root' jalankan callback
 // ketika kita mencoba untuk masuk ke route yang tidak ada express akan 'meresponse dengan 404' (coba masuk ke http://127.0.0.1:3000/tidak)
@@ -17,6 +16,13 @@ const qs = require("qs");
 // app.get('/product/:id', (req, res)=> {
 //    console.log(req.params.id)
 // })
+
+// jika use di atas route yang lain artinya request apapun yang ada di url akan ditangkap oleh method .use() dan route yang ada di bawah method .use() tidak akan dijalankan sebelum menuliskan fungsi middleware selanjutnya (next)
+app.use((req, res) => {
+  console.log(
+    "Request kalian tidak akan diteruskan karena sudah ditangkap ole methode .use()"
+  );
+});
 
 // mencoba response
 app.get("/", (req, res) => {
@@ -63,7 +69,7 @@ app.use("/", (req, res) => {
   res.send("<h1>404</h1>");
 });
 
-// method '.listen()' digunakan untuk bind dan menjalankan koneksi dan port
+// method '.listen()' digunakan untuk bind dan menjalankan koneksi atau port
 app.listen(port, () => {
-  console.log(`Example app listeningat http://${hostname}:${port}`);
+  console.log(`Example app listening at http://${hostname}:${port}`);
 });

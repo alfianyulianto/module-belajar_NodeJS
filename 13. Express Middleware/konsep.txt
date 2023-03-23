@@ -1,0 +1,38 @@
+Middleware
+- Sebuah software yang menghubungkan software atau aplikasi lain
+
+Middleware dapat digunakan dimana saja antaralain
+- Database
+- Web Service
+- Game Engine
+- Web Application
+
+Express Middleware itu apa?
+- Aplikasi Express itu sebenarnya berisi serangkaian pemanggilan Fungsi Middleware
+- Express menganggap yang diproses setelah user melakukan request dan sebelum user menerima response itu merupakan middleware
+
+Fungsi Middleware
+- Sebuah fungsi yang memiliki akses ke object request(req), object, response(res), dan fungsi middleware berikutya(next)
+
+Tugas dari Fungsi Middleware
+- Mengeksekusi kode
+- Melakukan perubahan pada request dan response object
+- Mengakhiri skiluk request-response
+- Memanggil fungsi middleware berikutnya
+
+- Jika fungsi middleware sedang dijalankan dan tidak mengakhiri siklus request-response, maka harus memanggil fungsi 'next'. Jika tidak maka fungsi tersebut akan 'hanging(ngehang)'
+
+Express Middleware dibagi menjadi 3
+- User-defined meiddleware
+  * Application-level middleware
+  * Route-level middleware
+  * Error-handling middleware
+- Build-in-middleware (sudah tertanam di Express)
+- Third-party-middleware (diambil dari npm)
+
+Build-in Middleware
+- Didalam express terdapat beerapa build-in middleware antara lain
+  * express.static
+  * express.json
+  * express.urlencoded
+- Secara default express melindungin file-file static kita(css, javascript, video, gambar, dst) sehingga kita tidak dapat mengakses file-file tersebut begitu saja. Kita dapat menggunakan file-file static tersebut menggunakan express.static

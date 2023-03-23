@@ -1,0 +1,13 @@
+show dbs : digunakan untuk mengetahui semua database yang ada
+use <name_database> : digunakan untuk membuat sebuah database dan menggunakan sebuah database
+show collections : digunakan untuk mengetahui semua collection yang ada di salah satu database
+
+
+--DML (Data Manipulation Languanga--
+
+` Show
+* db.<name_collection>.find() : menampilkan semua document yang ada di suatu collection
+
+- Insert
+* db.<name_collection>.insertOne({}) : digunakan untuk menambah satu document di collection
+* db.<name_collection>.insertMany([{}, {}, {}]) : digunakan untuk menambah banyak document di collection

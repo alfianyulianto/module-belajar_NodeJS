@@ -1,0 +1,42 @@
+MongoDB
+- https://www.mongodb.com
+- Berasal dari kata 'Humongous Database'
+- MongoDB is document database with the scalability and flexibility that you want with the queryig and indexing that you need(MongoDB adalah sebuah 'database berabasis dokument' yan memiliki skalabilitas dan fleksibilitas yang kita inginkan dna juga memiliki fitur qury dan indexing yang kita butuhkan)
+
+Database Berbassis Dokument
+- Salah satu tipe dari 'NoSQL Database'
+
+NoSQL Database
+- Not Only SQL (bisa melakukan lebih dari SQL)
+- Schemaless / Flexible Schema (tidak memiliki schema / artinya kita tidak memerlukan 'Data Definition Language', artinya kita tidak perlu menentukan struktur database. Struktur seperti field, ukuran, not null, dst)
+- Denormalization (kalo di SQL Normalization)
+- Non-relational Database (tidak menganut konsep primary key, foregnt key dan kardinalitas)
+- Unstructured, semi-structured, structured data
+
+Tipe NoSQL Database
+- Key-value Store (hanya menyimpan pasangan antara key dan value)
+  * Redis
+- Document Based
+  * MongoDB
+  * CouchDB
+- Column-oriented Database
+  * HBase
+  * Cassandra
+- Graph Database
+  * Neo4J
+
+Terminologi pada SQL vs NoSQL
+-------------------------------------------------------------------------
+|                  SQL                |               NoSQL              | 
+-------------------------------------------------------------------------
+| Tempat penyimpanan Database         | Tempat penyimpanan Database      |
+| Bentuk datanya dalam table          | Bentuk seperti JSON (collection) |
+| Satu buah data disebut record / row | Satu buah data disebut document  |
+| Normalization                       | konsep Embeded Document (Denormalization)
+-------------------------------------------------------------------------
+
+Kenapa MongoDB?
+- Format Data JSON (BSON / Binary JSON)
+- Javascript
+- MERN, MEVN, MEAN
+

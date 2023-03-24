@@ -161,7 +161,7 @@ app.get("/contact/edit/:nama", (req, res) => {
   });
 });
 
-// proses data contact
+// proses update data contact
 app.post(
   "/contact/update",
   [

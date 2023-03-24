@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <h2>Detail Contact</h2>
+      <!-- jika detail contact tidak ada -->
+      <% if (!contact) { %>
+      <div class="alert alert-danger fw-bold" role="alert">
+        Data contact tidak ada. </br>
+        <a href="/contact" class="alert-link fw-normal"
+          >&laquo; kembali ke daftar contact</a
+        >.
+      </div>
+      <% } else { %>
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title"><%= contact.nama %></h5>
+          <h6 class="card-subtitle mb-2 text-muted"><%= contact.noHP %></h6>
+          <p class="card-text"><%= contact.nama %></p>
+          <a href="/contact/edit/<%= contact.nama %>" class="btn btn-warning badge mb-3">ubah</a>
+          <!-- Menggunakan package methode-override -->
+          <form action="/contact?_method=DELETE" method="post" class="d-inline">
+            <input type="hidden" name="nama" value="<%= contact.nama %>">
+            <button type="submit" onclick="return confirm('Yakin?')" class="btn btn-danger badge mb-3">hapus</button>
+          </form>
+
+          <!-- Tanpda menggunakan package method-override -->
+          <!-- <a href="/contact/delete/<%= contact.nama %>" onclick="return confirm('Yakin?')" class="btn btn-danger badge mb-3">hapus</a> -->
+
+          <a href="/contact" class="card-link d-block">Kembali ke daftar contact</a>
+        </div>
+      </div>
+      <% } %>
+    </div>
+  </div>
+</div>

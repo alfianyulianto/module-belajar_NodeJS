@@ -1,0 +1,3 @@
+Mongoose (package untuk menghubungkan dengan mudah aplikasi express ke mongoDB)
+- Mongoose disebut dengan Object Modeling (ODM / Object Document Model). Ini padanannya dengan ORM (Object Relathional Mapper)
+- Mongoose menyediakan solusi berbasis schema untuk database kita yang dianggap sebagai model yang didalamnya ada type casting(perubaha tipe), validasi, query builder, dll

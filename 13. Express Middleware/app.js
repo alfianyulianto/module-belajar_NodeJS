@@ -34,7 +34,7 @@ app.use((req, res, next) => {
 // app.get("/middleware", (req, res, next)=> {})
 app.get("/", (req, res) => {
   res.render("index", {
-    title: "Halaman Homde",
+    title: "Halaman Home",
     nama: "Alfian Yulianto",
   });
 });

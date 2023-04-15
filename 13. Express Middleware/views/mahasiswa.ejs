@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>Daftar Mahasiswa</h1>
+      <% if (mahasiswa.length < 1) { %>
+      <p>Data mahasiswa masih kosong</p>
+      <% } else { %> <% mahasiswa.forEach(mhs => { %>
+      <ul>
+        <li><%= mhs.nama %></li>
+        <li><%= mhs.nim %></li>
+        <li><%= mhs.email %></li>
+      </ul>
+      <% }) %> <% } %>
+    </div>
+  </div>
+</div>
